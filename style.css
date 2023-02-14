@@ -72,7 +72,7 @@
     flex-direction: column;
     justify-content: flex-end;
     background: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%), url(0023.jpg);
-    border-radius: 16px;
+    border-radius: 18px;
 }
 
 .game1 {
@@ -88,6 +88,7 @@
 .game3 {
     background-image: url(img/game3.jpg);
     background-size: cover;
+
 }
 
 .game_box-text {
