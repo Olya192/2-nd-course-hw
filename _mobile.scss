@@ -59,4 +59,31 @@
         }
 
     }
+
+    .game__seasons {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-top: 51px;
+        padding-bottom: 85px;
+        gap: 64px;
+
+        &-content {
+            gap: 32px;
+        }
+
+        &-top {
+            font-size: 32px;
+            line-height: 39px;
+        }
+
+        &-text {
+            font-size: 14px;
+            line-height: 22px;
+        }
+
+        &-img {
+            max-width: 344px;
+        }
+    }
 }
