@@ -65,3 +65,38 @@
 //     default: console.log('Введено не корректное число');
 //         break;
 // }
+
+// Дополнительные задания
+
+// let inputNumber = prompt('Пожалуйста, введите любое число');
+// result = inputNumber % 2;
+
+
+// if (!result && result !== 0) { alert (result);
+    
+// } else if (result === 0) { alert ('Число четное');
+    
+// } else { alert ('Число нечетное');
+
+// }
+
+
+// let clientOS;
+
+// if (/Android/i.test(navigator.userAgent)) {
+//     clientOS = 1;
+// } else if (/iPhone/i.test(navigator.userAgent)) {
+//     clientOS = 0;
+// }  else {
+//     clientOS = 2;
+// }
+
+// if (clientOS === 1) {
+//     console.log('Установите версию приложения для Android по ссылке');
+// } else if ( clientOS === 0) {
+//     console.log('Установите версию приложения для iOS по ссылке');
+// }  else {
+//     console.log('ПК версия');
+// }
+
+
