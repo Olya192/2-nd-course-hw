@@ -8,6 +8,24 @@
   padding-right: calc(50% - 600px);
 }
 
+.button_text {
+  width: 234px;
+  height: 49px;
+  background: #9C0332;
+  border-radius: 30px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #FFFFFF;
+  transition: all 0.4s;
+}
+.button_text:hover {
+  background: #FFFFFF;
+  color: #9C0332;
+}
+
 .header {
   height: 1024px;
   background-image: url(img/back.jpg);
@@ -39,18 +57,6 @@
   margin-top: 32px;
   margin-bottom: 44px;
 }
-.header__button-text {
-  width: 234px;
-  height: 49px;
-  background: #9C0332;
-  border-radius: 30px;
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 22px;
-  color: #FFFFFF;
-}
 
 .game {
   display: grid;
@@ -60,9 +66,17 @@
   padding-bottom: 128px;
   padding-top: 128px;
 }
+.game__linc {
+  grid-column: span 4;
+  text-decoration: none;
+  transition: all 0.4s;
+  padding: 16px;
+}
+.game__linc:hover {
+  transform: scale(1.2);
+}
 .game__box {
   height: 300px;
-  grid-column: span 4;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -93,6 +107,36 @@
 .game3 {
   background-image: url(img/game3.jpg);
   background-size: cover;
+}
+
+.game__seasons {
+  background: #000915;
+  display: flex;
+  gap: 134px;
+  padding-top: 234px;
+  padding-bottom: 234px;
+  align-items: center;
+}
+.game__seasons-top {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 59px;
+  color: #FFFFFF;
+}
+.game__seasons-text {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 32px;
+  color: #FFFFFF;
+}
+.game__seasons-content {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
 }
 
 @media (max-width: 767px) {
@@ -143,5 +187,27 @@
     max-width: 343px;
     margin-left: auto;
     margin-right: auto;
+  }
+  .game__seasons {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 51px;
+    padding-bottom: 85px;
+    gap: 64px;
+  }
+  .game__seasons-content {
+    gap: 32px;
+  }
+  .game__seasons-top {
+    font-size: 32px;
+    line-height: 39px;
+  }
+  .game__seasons-text {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .game__seasons-img {
+    max-width: 344px;
   }
 }/*# sourceMappingURL=Style.css.map */
