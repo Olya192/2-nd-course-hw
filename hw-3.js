@@ -2,7 +2,7 @@
 // let answerPass = prompt ('Введите пароль');
 // answerPass = answerPass.toLocaleLowerCase();
 
-// if (password=answerPass) { alert ('Пароль введен верно')
+// if (password===answerPass) { alert ('Пароль введен верно')
 
 // } else { alert ('Пароль введен неправильно')
 
