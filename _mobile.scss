@@ -113,4 +113,19 @@
             max-width: 344px;
         }
     }
+
+    .game__riddles {
+        padding-top: 141px;
+
+        &-top {
+            font-size: 32px;
+            line-height: 39px;
+        }
+
+        &-text {
+            font-size: 14px;
+            line-height: 22px;
+        }
+    }
+
 }

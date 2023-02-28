@@ -25,6 +25,8 @@
     line-height: 22px;
     color: $colorText;
     transition: all 0.4s;
+    cursor: pointer;
+
 
     &:hover {
         background: $colorText;
@@ -83,11 +85,13 @@
         grid-column: span 4;
         text-decoration: none;
         transition: all 0.4s;
-        padding: 16px;
+        border: 3px solid transparent;
+        border-radius: 16px;
 
         &:hover {
-            transform:scale(1.2);
-                   }
+            border-color: #44D2FF;
+
+        }
     }
 
     &__box {
@@ -108,7 +112,7 @@
         color: $colorText;
         margin-bottom: 32px;
         margin-left: 32px;
-       
+
     }
 }
 
@@ -193,6 +197,86 @@
         gap: 32px;
     }
 }
+
+.game__riddles {
+    background-image: url(img/riddles.jpg);
+    background-position: center;
+    background-size: cover;
+    padding-top: 276px;
+    padding-bottom: 288px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
+    &-top {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 59px;
+        color: $colorText;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    &-text {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 32px;
+        color: $colorText;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    &-button {
+        display: flex;
+        justify-content: center;
+        text-decoration: none;
+    }
+}
+
+.footer {
+    background: $colorBack;
+    padding: 32px;
+    display: flex;
+    justify-content: center;
+
+    &__text {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 15px;
+        color: $colorText;
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 @import 'mobile';
