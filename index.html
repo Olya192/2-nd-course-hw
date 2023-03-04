@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Игры</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -46,8 +46,7 @@
             <h2 class="game__seasons-top"> Времена года! </h2>
             <p class="game__seasons-text"> Нажмите кнопку играть, введите номер месяца (от 1 до 12) и вы узнаете к
                 какому времени года он относится</p>
-            <a class="game__seasons-button button" href="#"><button
-                    class="game__seasons-button_text button_text">Играть!</button></a>
+            <button class="game__seasons-button_text button_text" onclick="gameSeason();">Играть!</button>
         </div>
 
         <div>
@@ -57,19 +56,35 @@
     </div>
 
     <div class="game__words center">
-        <div >
+        <div>
             <img class="game__words-img" src="img/words.svg" alt="words">
         </div>
 
         <div class="game__words-content">
             <h2 class="game__words-top"> Запомни слова </h2>
-            <p class="game__words-text">При нажатии на кнопку играть, вы увидите несколько слов, которые вам необходимо запомнить.</p>
+            <p class="game__words-text">При нажатии на кнопку играть, вы увидите несколько слов, которые вам необходимо
+                запомнить.</p>
             <a class="game__words-button button" href="#"><button
-                class="game__words-button_text button_text">Играть!</button></a>
+                    class="game__words-button_text button_text">Играть!</button></a>
         </div>
 
     </div>
 
+    <div class="game__riddles center">
+        <h1 class="game__riddles-top">Игра в загадки</h1>
+        <p class="game__riddles-text">Компьютер загадывает загадку, вам необходимо ее угадать, если вы дадите не
+            правильный ответ, то компьютер
+            даст вам подсказку. У вас будет три попытки и две подсказки.</p>
+        <a class="game__riddles-button button" href="#">
+            <button class="game__riddles-button_text button_text">Играть!</button>
+        </a>
+    </div>
+
+    <footer class="footer center">
+        <p class="footer__text">Все права защищены</p>
+    </footer>
+
+    <script src="./game.js">    </script>
 
 </body>
 
