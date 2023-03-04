@@ -16,15 +16,14 @@
 // Задача №2
 
 // const parity = (a) => {
-//     let b = a % 2;
-//     if (b === 0) {
+//     if (a % 2 === 0) {
 //         console.log('Число четное');
 //     } else {
 //         console.log('Число нечетное');
 //     }
 // }
 
-// parity(8);
+// parity(5);
 
 
 
@@ -43,8 +42,8 @@
 
 // Задача №3.2
 
-// function square(a) {
-//     return a ** 2;
+// function square(number) {
+//     return number ** 2;
 // }
 
 // console.log(square(4));
