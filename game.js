@@ -15,3 +15,25 @@ function gameSeason() {
     }
 
 }
+
+
+function gameWords() {
+
+    let words = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
+    words = words.sort(() => Math.random() - 0.5);
+    words = words.map((word) => word.toUpperCase());
+    alert(words);
+
+    let userAnswerOne = prompt('Введите первое слово').toUpperCase();
+    let userAnswerTwo = prompt('Введите последнее слово').toUpperCase();
+
+
+    if (userAnswerOne === words[0] && userAnswerTwo === words[6]) {
+        alert('Победа!!!');
+    } else if (userAnswerOne === words[0] || userAnswerTwo === words[6]) {
+        alert('Вы были близки к победе!');
+    } else {
+        alert('Ответ не верный. Попробуйте еще раз.');
+    }
+
+}
