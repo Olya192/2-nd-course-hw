@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/Style.css">
 </head>
 
 <body>
@@ -24,24 +24,24 @@
     </header>
 
     <div class="game center ">
-        <a class="game__linc" href="#">
+        <a class="game__linc" href="#game1">
             <div class="game__box game1">
                 <p class="game__box-text">Игра 1</p>
             </div>
         </a>
-        <a class="game__linc" href="#">
+        <a class="game__linc" href="#game2">
             <div class="game__box game2">
                 <p class="game__box-text">Игра 2</p>
             </div>
         </a>
-        <a class="game__linc" href="#">
+        <a class="game__linc" href="#game3">
             <div class="game__box game3">
                 <p class="game__box-text">Игра 3</p>
             </div>
         </a>
     </div>
 
-    <div class="game__seasons center">
+    <div class="game__seasons center" id="game1">
         <div class="game__seasons-content">
             <h2 class="game__seasons-top"> Времена года! </h2>
             <p class="game__seasons-text"> Нажмите кнопку играть, введите номер месяца (от 1 до 12) и вы узнаете к
@@ -50,27 +50,27 @@
         </div>
 
         <div>
-            <img class="game__seasons-img" src="img/seasons.svg" alt="seasons">
+            <img class="game__seasons-img" src="styles/img/seasons.svg" alt="seasons">
         </div>
 
     </div>
 
-    <div class="game__words center">
+    <div class="game__words center" id="game2">
         <div>
-            <img class="game__words-img" src="img/words.svg" alt="words">
+            <img class="game__words-img" src="styles/img/words.svg" alt="words">
         </div>
 
         <div class="game__words-content">
             <h2 class="game__words-top"> Запомни слова </h2>
             <p class="game__words-text">При нажатии на кнопку играть, вы увидите несколько слов, которые вам необходимо
                 запомнить.</p>
-            <a class="game__words-button button" href="#"><button
-                    class="game__words-button_text button_text">Играть!</button></a>
+            <a class="game__words-button button" href="#"><button class="game__words-button_text button_text"
+                    onclick="gameWords();">Играть!</button></a>
         </div>
 
     </div>
 
-    <div class="game__riddles center">
+    <div class="game__riddles center" id="game3">
         <h1 class="game__riddles-top">Игра в загадки</h1>
         <p class="game__riddles-text">Компьютер загадывает загадку, вам необходимо ее угадать, если вы дадите не
             правильный ответ, то компьютер
